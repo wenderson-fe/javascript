@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro script</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: rgb(81 81 209)
+        }
+
+        header {
+            font-size: 1em;
+            text-align: center;
+            background-image: linear-gradient(to bottom, rgb(146 146 245), rgba(44 44 165));
+            border-radius:10px 10px 10px 10px;
+            margin: auto;
+            padding: 10px;
+            width: 50vw;    
+        }
+        header {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Olá, Mundo</h1>
+        <p>Já me livrei da maldição</p>
+    </header>
+    
+    <script>
+       var n1 = Number(window.prompt('Digite um número: '))
+       var n2 = Number(window.prompt('Digite outro número: '))
+       var s = n1 + n2
+       window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // Concatenação
+       // (number + number) para adição
+       // (string+ string) para concatenação
+    </script>
+</body>
+</html>
