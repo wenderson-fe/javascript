@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Nacionalidade</h1>
+        <div>
+            <p>País onde nasceu:</p>
+            <input type="text" name="txtname" id="txtname">
+            <input type="button" value="Verificar" onclick="verificar()">
+            <div id="res">
+        </div>
+
+        </div>
+    </main>
+
+        <script>
+            function verificar() {
+            var txtn = window.document.querySelector('input#txtname')
+            var res = window.document.querySelector('div#res')
+            var n = String(txtn.value)
+            // res.innerHTML = `Você nasceu nasceu em ${n}`
+            if (n == 'Brasil' || n == 'brasil' || n == 'Brazil') {
+                res.innerHTML += `<p>Você nasceu em <strong>${n}</strong>, então você é Brasileiro</p>`
+            }
+            else {
+                res.innerHTML += `<p>Você nasceu em <strong>${n}</strong>, então você é Estrangeiro</p>`
+            }
+            }
+        
+        </script>
+</body>
+</html>
