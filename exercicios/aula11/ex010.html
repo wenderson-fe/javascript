@@ -6,14 +6,36 @@
     <title>DETRAN</title>
     <style>
         body{
+            display: flex;
+            justify-content: center;
             background-color: lightgray;
+        }
+
+        h1 {
+            background-color: gray;
+            font-size: 2.3em;
+            padding: 5px;
+            width: 289px;
+            border-radius: 10px;
+        }
+
+        #txtvel {
+            width: 50px;
+        }
+        .div {
+            text-align: center;
+            /* background-color: gray; */
+        }
+
+        #res{
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <main>
         <h1>Sistema de Multas</h1>
-        <div>
+        <div class="div">
             <p>Velocidade do carro:</p>
             <input type="number" name="txtvel" id="txtvel"> Km/h
             <input type="button" value="Verificar" id="button" onclick="calcular()">
